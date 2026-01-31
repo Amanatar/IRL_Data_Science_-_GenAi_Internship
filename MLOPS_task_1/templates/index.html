@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flipkart Sentiment Analysis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="page">
+    <div class="card">
+        <h1>Flipkart Sentiment Analysis</h1>
+        <p class="subtitle">
+            Product: <strong>YONEX MAVIS 350 Nylon Shuttle</strong>
+        </p>
+
+        <form method="post">
+            <textarea
+                name="review"
+                placeholder="Enter a customer review..."
+                required>{{ review_text or "" }}</textarea>
+
+            <button type="submit">Analyze Sentiment</button>
+        </form>
+
+        {% if sentiment %}
+        <div class="result">
+            <p class="sentiment {{ sentiment|lower }}">
+                {{ sentiment }} Review
+            </p>
+            <p class="confidence">
+                Confidence Score: <strong>{{ confidence }}%</strong>
+            </p>
+        </div>
+        {% endif %}
+    </div>
+</div>
+
+</body>
+</html>
