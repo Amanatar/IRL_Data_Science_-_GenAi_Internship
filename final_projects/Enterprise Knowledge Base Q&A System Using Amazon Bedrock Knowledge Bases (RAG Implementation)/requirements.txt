@@ -1,0 +1,12 @@
+# Enterprise Knowledge Base Q&A System - Dependencies
+# Amazon Bedrock RAG Implementation
+
+# ── Core ────────────────────────────────────────────
+streamlit>=1.30.0
+boto3>=1.34.0
+python-dotenv>=1.0.0
+
+# ── AWS Dependencies (installed with boto3) ─────────
+# botocore
+# s3transfer
+# jmespath

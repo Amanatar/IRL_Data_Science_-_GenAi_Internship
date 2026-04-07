@@ -1,0 +1,11 @@
+# FinWise — AI Financial Advisor
+# Python 3.10+
+
+# ── Core ────────────────────────────────────────────────────────
+streamlit>=1.32.0
+google-generativeai>=0.8.0
+openai>=1.0.0
+python-dotenv>=1.0.0
+
+# ── Utilities ───────────────────────────────────────────────────
+google-api-core>=2.15.0       # retry / exception types used by gemini_client
