@@ -4,9 +4,11 @@ import re
 
 app = Flask(__name__)
 
+import os
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 # Load trained artifacts
-model = joblib.load("deployment_files/sentiment_model.pkl")
-vectorizer = joblib.load("deployment_files/tfidf_vectorizer.pkl")
+model = joblib.load(os.path.join(BASE_DIR, "deployment_files", "sentiment_model.pkl"))
+vectorizer = joblib.load(os.path.join(BASE_DIR, "deployment_files", "tfidf_vectorizer.pkl"))
 
 def clean_text(text: str) -> str:
     text = text.lower()
