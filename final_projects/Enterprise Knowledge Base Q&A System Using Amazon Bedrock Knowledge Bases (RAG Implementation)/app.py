@@ -240,8 +240,9 @@ def render_header():
 
 
 def render_sidebar():
-    """Sidebar removed per user request."""
-    pass
+    """Sidebar container for model and session configuration."""
+    # Main settings are surfaced in primary viewport layout
+    return None
 
 
 def render_message(role: str, content: str, citations: list | None = None):
