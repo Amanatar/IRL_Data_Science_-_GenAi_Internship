@@ -2,6 +2,7 @@
 
 <div align="center">
 
+[![CI Verified](https://github.com/Amanatar/IRL_Data_Science_-_GenAi_Internship/actions/workflows/ci-verify.yml/badge.svg)](https://github.com/Amanatar/IRL_Data_Science_-_GenAi_Internship/actions)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?logo=streamlit&logoColor=white)](https://streamlit.io)
